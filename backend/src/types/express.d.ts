@@ -1,4 +1,4 @@
-import "express";
+import type { Multer } from "multer";
 
 declare global {
   namespace Express {
@@ -11,3 +11,5 @@ declare global {
     }
   }
 }
+
+export {}; // 👈 very important to make this a module, prevents clobbering "express"
