@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Response } from "express";
 import { FileModel } from "../models/file.model";
 import { UserModel } from "../models/user.model";
 import { supabase } from "../db/index";
@@ -8,7 +8,6 @@ import { asyncHandler } from "../utils/asyncHandler";
 import {
   AuthenticatedRequest,
   CreateFileData,
-  File,
   StorageInfo,
 } from "../types/index";
 import { v4 as uuidv4 } from "uuid";

@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import { UserModel } from '../models/user.model';
 import { OTPModel } from '../models/otp.model';
 import emailService from '../services/emailService';
