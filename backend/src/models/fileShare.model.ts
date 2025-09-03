@@ -1,5 +1,5 @@
-import { supabase } from '../db/index.js';
-import { FileShare, CreateFileShareData, UpdateFileShareData } from '../types/index.js';
+import { supabase } from '../db/index';
+import { FileShare, CreateFileShareData, UpdateFileShareData } from '../types/index';
 
 export class FileShareModel {
   static async create(shareData: CreateFileShareData): Promise<FileShare> {

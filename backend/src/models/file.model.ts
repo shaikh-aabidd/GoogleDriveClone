@@ -1,5 +1,5 @@
-import { supabase } from '../db/index.js';
-import { File, CreateFileData, UpdateFileData } from '../types/index.js';
+import { supabase } from '../db/index';
+import { File, CreateFileData, UpdateFileData } from '../types/index';
 
 export class FileModel {
   static async create(fileData: CreateFileData): Promise<File> {

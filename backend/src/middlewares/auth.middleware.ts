@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
-import { UserModel } from '../models/user.model.js';
-import { ApiError } from '../utils/ApiError.js';
-import { asyncHandler } from '../utils/asyncHandler.js';
-import { AuthenticatedRequest, JWTPayload } from '../types/index.js';
+import { UserModel } from '../models/user.model';
+import { ApiError } from '../utils/ApiError';
+import { asyncHandler } from '../utils/asyncHandler';
+import { AuthenticatedRequest, JWTPayload } from '../types/index';
 import jwt from 'jsonwebtoken';
 
 const verifyJWT = asyncHandler(async (req: Request, res: Response, next: NextFunction) => {

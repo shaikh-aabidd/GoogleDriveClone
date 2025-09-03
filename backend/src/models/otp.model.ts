@@ -1,5 +1,5 @@
-import { supabase } from '../db/index.js';
-import { OTPRecord, OTPVerificationResult } from '../types/index.js';
+import { supabase } from '../db/index';
+import { OTPRecord, OTPVerificationResult } from '../types/index';
 
 export class OTPModel {
   static async create(email: string, otp: string): Promise<OTPRecord> {

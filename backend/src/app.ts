@@ -1,4 +1,4 @@
-import express, { Express } from "express";
+import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
@@ -7,7 +7,7 @@ import rateLimit from "express-rate-limit";
 import { errorHandler } from "./middlewares/error.middleware.js";
 import { ApiError } from "./utils/ApiError.js";
 
-const app: Express = express();
+const app = express();
 
 // =================== Middleware Setup ====================
 // 1. Rate Limiting

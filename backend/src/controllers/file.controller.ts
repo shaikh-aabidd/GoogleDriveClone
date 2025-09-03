@@ -1,19 +1,19 @@
 import { Request, Response } from "express";
-import { FileModel } from "../models/file.model.js";
-import { UserModel } from "../models/user.model.js";
-import { supabase } from "../db/index.js";
-import { ApiError } from "../utils/ApiError.js";
-import { ApiResponse } from "../utils/ApiResponse.js";
-import { asyncHandler } from "../utils/asyncHandler.js";
+import { FileModel } from "../models/file.model";
+import { UserModel } from "../models/user.model";
+import { supabase } from "../db/index";
+import { ApiError } from "../utils/ApiError";
+import { ApiResponse } from "../utils/ApiResponse";
+import { asyncHandler } from "../utils/asyncHandler";
 import {
   AuthenticatedRequest,
   CreateFileData,
   File,
   StorageInfo,
-} from "../types/index.js";
+} from "../types/index";
 import { v4 as uuidv4 } from "uuid";
 import path from "path";
-import { FileShareModel } from "../models/fileShare.model.js";
+import { FileShareModel } from "../models/fileShare.model";
 
 // Upload File
 const uploadFile = asyncHandler(async (req: AuthenticatedRequest, res: Response) => {

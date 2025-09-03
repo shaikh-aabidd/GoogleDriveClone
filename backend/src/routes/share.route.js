@@ -1,6 +1,6 @@
 import express from "express";
-import { shareFileWithEmail, generateSharableLink, getSharedFile, getSharedWithMe } from "../controllers/file.controller.js";
-import { verifyJWT } from "../middlewares/auth.middleware.js";
+import { shareFileWithEmail, generateSharableLink, getSharedFile, getSharedWithMe } from "../controllers/file.controller";
+import { verifyJWT } from "../middlewares/auth.middleware";
 
 const router = express.Router();
 router.use(verifyJWT);

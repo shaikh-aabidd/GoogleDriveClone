@@ -1,5 +1,5 @@
-import { supabase } from '../db/index.js';
-import { User, CreateUserData } from '../types/index.js';
+import { supabase } from '../db/index';
+import { User, CreateUserData } from '../types/index';
 import bcrypt from 'bcrypt';
 
 export class UserModel {

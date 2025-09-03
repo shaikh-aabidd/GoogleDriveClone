@@ -12,4 +12,4 @@ declare global {
   }
 }
 
-export {}; // 👈 very important to make this a module, prevents clobbering "express"
+export {};

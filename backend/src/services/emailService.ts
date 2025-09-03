@@ -1,5 +1,5 @@
 import nodemailer, { Transporter } from 'nodemailer';
-import { EmailOptions } from '../types/index.js';
+import { EmailOptions } from '../types/index';
 
 class EmailService {
   private transporter: Transporter;

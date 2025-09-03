@@ -1,4 +1,4 @@
-import { ApiErrorData } from '../types/index.js';
+import { ApiErrorData } from '../types/index';
 
 class ApiError extends Error {
   public statusCode: number;

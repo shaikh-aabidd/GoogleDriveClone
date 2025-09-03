@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
-import { UserModel } from '../models/user.model.js';
-import { OTPModel } from '../models/otp.model.js';
-import emailService from '../services/emailService.js';
-import { ApiError } from '../utils/ApiError.js';
-import { ApiResponse } from '../utils/ApiResponse.js';
-import { asyncHandler } from '../utils/asyncHandler.js';
-import { AuthenticatedRequest, JWTPayload, RefreshTokenPayload } from '../types/index.js';
+import { UserModel } from '../models/user.model';
+import { OTPModel } from '../models/otp.model';
+import emailService from '../services/emailService';
+import { ApiError } from '../utils/ApiError';
+import { ApiResponse } from '../utils/ApiResponse';
+import { asyncHandler } from '../utils/asyncHandler';
+import { AuthenticatedRequest, JWTPayload, RefreshTokenPayload } from '../types/index';
 import bcrypt from 'bcrypt';
 import jwt, { SignOptions, Secret } from 'jsonwebtoken';
 
