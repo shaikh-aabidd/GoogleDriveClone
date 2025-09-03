@@ -1,5 +1,7 @@
+import type { Multer } from "multer";
+import { RequestHandler } from 'express';
+
 declare module 'xss-clean' {
-  import { RequestHandler } from 'express';
   const xss: RequestHandler;
   export = xss;
 }
@@ -18,6 +20,16 @@ declare global {
       SUPABASE_ANON_KEY: string;
       EMAIL_USER: string;
       EMAIL_PASSWORD: string;
+    }
+  }
+  
+  namespace Express {
+    interface Request {
+      user?: {
+        userId: number;
+        email: string;
+      };
+      file?: Multer.File;
     }
   }
 }
