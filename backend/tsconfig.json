@@ -29,7 +29,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "typeRoots": ["./node_modules/@types"],
-    "types": ["node", "express"]
+    "types": ["node"]
   },
   "include": [
     "src/**/*"
