@@ -27,7 +27,7 @@ function App() {
     const loadUser = async () => {
       try {
         const res = await axios.post(
-          'http://localhost:8000/api/v1/auth/refresh-token',
+          `${import.meta.env.VITE_API_URL}/auth/refresh-token`,
           {},
           { withCredentials: true }
         );
