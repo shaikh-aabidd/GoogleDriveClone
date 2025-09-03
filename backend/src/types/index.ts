@@ -79,6 +79,10 @@ export interface RefreshTokenPayload {
 // Request Types
 export interface AuthenticatedRequest extends Request {
   user: JWTPayload;
+  body: any;
+  params: any;
+  query: any;
+  file?: any;
 }
 
 // API Response Types
