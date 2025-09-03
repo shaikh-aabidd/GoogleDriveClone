@@ -1,4 +1,3 @@
-import { ApiResponseData } from '../types/index';
 
 class ApiResponse<T = any> {
   public statusCode: number;
